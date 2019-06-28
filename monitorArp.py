@@ -9,4 +9,4 @@ def arp_display(pkt):
     if pkt[ARP].op == 2:
         return "Resposta: " + pkt[ARP].hwsrc + "tem o endereço " + pkt[ARP].psrc
 
-print(sniff(prn=arp_display, filter="arp", store=0))
+print(sniff(prn=arp_display, filter="arp", store=0)) 
